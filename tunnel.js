@@ -132,7 +132,7 @@ function initializeTunnel() {
     // create the wireframe grid structure
     function createWireframeGrid() {
         // create multiple grid segments for depth
-        const segmentCount = 25;
+        const segmentCount = 0;
         const gridHTML = [];
         
         for (let i = 0; i < segmentCount; i++) {
