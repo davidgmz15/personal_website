@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Gonzalez - Journey Through the Tunnel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- loading screen -->
+    <div id="loading-screen">
+        <div class="loading-text">Entering the tunnel...</div>
+    </div>
+
+    <!-- scroll indicator -->
+    <div class="scroll-indicator">
+        <span>Scroll down to enter the tunnel</span>
+        <div class="arrow-down"></div>
+    </div>
+
+    <!-- depth indicator -->
+    <div class="depth-indicator">
+        <span id="depth-counter">0m</span>
+        <div class="depth-bar">
+            <div id="depth-progress"></div>
+        </div>
+    </div>
+
+    <!-- main viewport for tunnel -->
+    <div class="viewport">
+        <div id="tunnel-container">
+            <!-- wireframe tunnel grid -->
+            <div id="tunnel-grid"></div>
+            
+            <!-- tunnel content sections -->
+            <div id="tunnel-content">
+                <!-- entrance section -->
+                <div class="tunnel-section" data-index="0">
+                    <div class="section-content">
+                        <div class="panel left-panel">
+                            <h2 class="glitch-text">Hey there!<br>Welcome to my portfolio</h2>
+                        </div>
+                        <div class="panel right-panel">
+                            <h1 class="title">My name is David Gonzalez.</h1>
+                            <p class="subtitle">I'm a Data Science and Economics student at the University of Michigan!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- about me section -->
+                <div class="tunnel-section" data-index="1">
+                    <div class="section-content">
+                        <div class="panel left-panel">
+                            <h2>About Me:</h2>
+                            <p>
+                                <br>I was born in Monterrey, Mexico, however, I moved to San Antonio, Texas when I was around 6 years old.
+                                I've always been very close to my roots and love visiting Mexico as much as possible. 
+                                I love both sports and drawing, having played Varsity Soccer all throughout high school and also having an art TikTok account
+                                with over 70k followers.
+                            </p>
+                            <div class="graffiti-tag">// vamos Rayados!</div>
+                        </div>
+                        <div class="panel right-panel image-panel">
+                            <div class="image-gallery">
+                                <div class="image-container">
+                                    <img src="images/861beddf-e371-41c7-a77e-94f1f3222a61.jpg" alt="Journey moment 1" class="gallery-image">
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/IMG_6580.JPG" alt="Journey moment 2" class="gallery-image">
+                                </div>
+                                <div class="image-container">
+                                    <img src="images/1e03a04f-129b-408a-a112-7b03aa820c1b.JPG" alt="Journey moment 3" class="gallery-image">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- skills section -->
+                <div class="tunnel-section" data-index="2">
+                    <div class="section-content">
+                        <div class="panel left-panel">
+                            <h2>Technical Skills</h2>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <span class="skill-name">C++</span>
+                                    <div class="star-rating" data-rating="5">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="star-rating" data-rating="5">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <div class="star-rating" data-rating="5">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Rust</span>
+                                    <div class="star-rating" data-rating="4">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">React</span>
+                                    <div class="star-rating" data-rating="4">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="star-rating" data-rating="4">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Node.js</span>
+                                    <div class="star-rating" data-rating="4">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Docker</span>
+                                    <div class="star-rating" data-rating="4">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">GitHub</span>
+                                    <div class="star-rating" data-rating="4">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel right-panel">
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <span class="skill-name">TypeScript</span>
+                                    <div class="star-rating" data-rating="3">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">C#</span>
+                                    <div class="star-rating" data-rating="3">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Next.js</span>
+                                    <div class="star-rating" data-rating="3">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">MongoDB</span>
+                                    <div class="star-rating" data-rating="3">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">SQL</span>
+                                    <div class="star-rating" data-rating="3">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">AWS</span>
+                                    <div class="star-rating" data-rating="3">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Axum</span>
+                                    <div class="star-rating" data-rating="3">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Flask</span>
+                                    <div class="star-rating" data-rating="3">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Websockets</span>
+                                    <div class="star-rating" data-rating="3">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- projects section -->
+                <div class="tunnel-section" data-index="3">
+                    <div class="section-content">
+                        <div class="panel left-panel">
+                            <h2>Project Alpha</h2>
+                            <p>Description of your amazing project...</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                        <div class="panel right-panel">
+                            <h2>Project Beta</h2>
+                            <p>Another innovative solution...</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>ML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- experience section -->
+                <div class="tunnel-section" data-index="4">
+                    <div class="section-content">
+                        <div class="panel left-panel">
+                            <h2>Work Experience</h2>
+                            <div class="timeline-item">
+                                <h3>Company Name</h3>
+                                <p class="role">Software Engineer</p>
+                                <p class="period">2022 - Present</p>
+                            </div>
+                        </div>
+                        <div class="panel right-panel">
+                            <h2>Achievements</h2>
+                            <ul class="achievements">
+                                <li>Built scalable systems</li>
+                                <li>Led technical initiatives</li>
+                                <li>Mentored developers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contact section - end of tunnel -->
+                <div class="tunnel-section" data-index="5">
+                    <div class="section-content">
+                        <div class="panel left-panel">
+                            <h2>Connect</h2>
+                            <div class="contact-links">
+                                <a href="#" class="contact-link">GitHub</a>
+                                <a href="#" class="contact-link">LinkedIn</a>
+                                <a href="#" class="contact-link">Email</a>
+                            </div>
+                        </div>
+                        <div class="panel right-panel">
+                            <h2>Let's Build</h2>
+                            <p>Ready to create something amazing?</p>
+                            <button class="cta-button">Get In Touch</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tunnel end -->
+                <div class="tunnel-section" data-index="6">
+                    <div class="section-content">
+                        <div class="end-message">
+                            <p>You've reached the end... for now</p>
+                            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Return to Surface</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- create scrollable height -->
+    <div id="scroll-spacer"></div>
+
+    <script src="tunnel.js"></script>
+</body>
+</html>
